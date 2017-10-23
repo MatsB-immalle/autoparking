@@ -41,9 +41,23 @@ namespace autoparking
         private void Uitgang_Click(object sender, RoutedEventArgs e)
         {
 
-            Teller.Content = counter - 1;
-            counter--;
+            
+            
+            if(counter < 0)
+            {
+               
+                MessageBox.Show("kan niet", "error", MessageBoxButton.OK);
+                counter++;
+                Teller.Content = counter;
+                counter--;
+            }
+            else
+            {
 
+                Teller.Content = counter -1 ;
+                counter--;
+
+            }
         }
     }
 }
