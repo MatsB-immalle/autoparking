@@ -24,5 +24,24 @@ namespace autoparking
         {
             InitializeComponent();
         }
+
+        int counter;
+
+        private void Ingang_Click(object sender, RoutedEventArgs e)
+        {
+
+            Teller.Content = counter;
+            counter++;
+
+        }
+
+
+        private void Uitgang_Click(object sender, RoutedEventArgs e)
+        {
+
+            Teller.Content = counter;
+            counter--;
+
+        }
     }
 }
