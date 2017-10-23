@@ -9,7 +9,7 @@
     <Grid>
         <Button x:Name="Uitgang" Content="uitgang" HorizontalAlignment="Left" Margin="49,59,0,0" VerticalAlignment="Top" Width="75" Click="Uitgang_Click"/>
         <Button x:Name="Ingang" Content="ingang" HorizontalAlignment="Left" Margin="374,59,0,0" VerticalAlignment="Top" Width="75" Click="Ingang_Click"/>
-        <Label x:Name="Teller" Content="" HorizontalAlignment="Left" Margin="161,202,0,0" VerticalAlignment="Top" Width="23" Height="26" RenderTransformOrigin="0.614,0.032"/>
+        <Label x:Name="Teller" Content="" HorizontalAlignment="Left" Margin="189,169,0,0" VerticalAlignment="Top" Width="60" Height="37" RenderTransformOrigin="0.614,0.032" FontSize="22"/>
         <TextBlock x:Name="cars" HorizontalAlignment="Left" Margin="189,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="167"><Run Text="Cars in park"/><Run Text="."/></TextBlock>
 
     </Grid>

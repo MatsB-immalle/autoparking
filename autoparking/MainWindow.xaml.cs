@@ -20,17 +20,19 @@ namespace autoparking
     /// </summary>
     public partial class MainWindow : Window
     {
+        int counter;
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        int counter;
+        
 
         private void Ingang_Click(object sender, RoutedEventArgs e)
         {
 
-            Teller.Content = counter;
+            Teller.Content = counter + 1;
             counter++;
 
         }
@@ -39,7 +41,7 @@ namespace autoparking
         private void Uitgang_Click(object sender, RoutedEventArgs e)
         {
 
-            Teller.Content = counter;
+            Teller.Content = counter - 1;
             counter--;
 
         }
